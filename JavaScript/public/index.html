@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-800 text-white font-mono">
+    <section class="flex flex-col items-center">
+      <h1
+        class="text-3xl font-bold text-sky-400 tracking-tight text-shadow-md text-shadow-sky-500"
+      >
+        Ingrese entre 10 a 20 numeros
+      </h1>
+      <form method="POST" id="form">
+        <input
+          maxlength="5"
+          type="number"
+          name="number"
+          placeholder="numeros"
+          id="number"
+          class="border-2 border-sky-500 p-3 mt-8 rounded-lg font-bold text-sky-400 outline-none"
+        />
+        <button
+          id="upload"
+          class="font-bold shadow-lg shadow-sky-400 mt-3 border-2 bg-sky-500 p-2 px-4 rounded-lg border-sky-500 text-gray-800 hover:bg-sky-700 hover:border-sky-700 hover:shadow-none transition duration-300 cursor-pointer"
+        >
+          enviar
+        </button>
+      </form>
+      <ul id="lista"></ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
